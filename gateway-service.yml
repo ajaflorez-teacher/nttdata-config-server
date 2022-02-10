@@ -8,10 +8,10 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: example-service
-          uri: lb://example-service
-          predicates:
-            - Path=/examples/**
+      - id: example-service
+        uri: lb://example-service
+        predicates:
+        - Path=/examples/**
 
 eureka:
   client:
